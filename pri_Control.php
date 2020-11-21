@@ -1,7 +1,7 @@
 <?php
 require("pri_Model.php");
 
-$uID=(int)$_GET['id'];
+$uID=(int)$_GET['sid'];
 $act =$_GET['act'];
 $msg = "Message:$uid, Action: $act completed.";
 
