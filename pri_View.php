@@ -59,7 +59,7 @@ td {
     <th>審查意見</th>    
     <th>秘書簽章</th>       
 	<th>校長核決</th>
-	<th>approve</th>
+	<th>核決</th>
 	<!--<th>disapprove</th>-->
   </tr>
 <?php
@@ -79,13 +79,13 @@ while ($rs=mysqli_fetch_assoc($result)) {
     echo "<td>" , $rs['sc_comment'], "</td>";
     echo "<td>" , $rs['sc_sign'], "</td>";
     echo "<td>" , $rs['pri_sign'], "</td>";
-	echo "<td><a href='pri_Control.php?act=approve&id={$rs['sid']}'>決行</a>&nbsp";
-	echo "<a href='pri_Control.php?act=disapprove&id={$rs['sid']}'>否決</a></td>";
+	echo "<td><a href='pri_Control.php?act=approve&sid={$rs['sid']}'>決行</a>&nbsp";
+	echo "<a href='pri_Control.php?act=disapprove&sid={$rs['sid']}'>否決</a></td>";
     
 	// echo "<td>";
 
-	// 	echo "<a href='pri_Control.php?act=approve&id={$rs['sid']}'>決行</a>  ";	
-    // 	echo "<a href='pri_Control.php?act=disapprove&id={$rs['sid']}'>否決</a>  " ;
+	// 	echo "<a href='pri_Control.php?act=approve&sid={$rs['sid']}'>決行</a>  ";	
+    // 	echo "<a href='pri_Control.php?act=disapprove&sid={$rs['sid']}'>否決</a>  " ;
 
 	// echo "</td>";
 	echo "</tr>";

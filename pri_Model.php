@@ -12,16 +12,18 @@ function getApplyDetail($sid) { //
 	return $result;
 }
 
-function setApprove($sid) {  //決行
+function setApprove($uid) {  //決行
 	global $db;
-	$sql = "update se_quiz_people set pri_admit = 1 where sid=$sid and pri_admit = 0;";
+	$sql = "UPDATE se_quiz_stu_apply SET pri_sign = '1' WHERE se_quiz_stu_apply.sid = '$uid'";
+	//$sql = "update se_quiz_stu_apply set pri_sign = 1 where sid=$uid and pri_sign = 0;";
+	//UPDATE `se_quiz_stu_apply` SET `pri_sign` = '1' WHERE `se_quiz_stu_apply`.`sid` = 0;
 	$result = mysqli_query($db,$sql) or die("MySQL query error"); //執行SQL
 	return $result;
 }
 
-function setDisApprove($sid) {  //否決
+function setDisApprove($uid) {  //否決
 	global $db;
-	$sql = "update se_quiz_people set pri_admit = 2 where sid=$sid and pri_admit = 0;";
+	$sql = "update se_quiz_stu_apply set pri_sign = 2 where sid=$uid and pri_sign = 0;";
 	$result = mysqli_query($db,$sql) or die("MySQL query error"); //執行SQL
 	return $result;
 }

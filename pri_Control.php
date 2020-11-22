@@ -1,19 +1,18 @@
 <?php
 require("pri_Model.php");
 
-$uID=(int)$_GET['sid'];
+$msgID=(int)$_GET['sid'];
 $act =$_GET['act'];
-$msg = "Message:$uid, Action: $act completed.";
+$msg = "Message:$msgID, Action: $act completed.";
 
-if ($uid>0) {
+if ($msgID>0) {
 	switch($act) {
 		case 'approve':
-			setApprove($uid);
-			
+			setApprove($msgID);
             break;
             
 		case 'disapprove':
-			setDisApprove($uid);
+			setDisApprove($msgID);
             break;
 
 		default:
