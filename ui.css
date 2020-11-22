@@ -1,0 +1,136 @@
+body {
+    font-family: "微軟正黑體";
+  }
+.tb {
+    /* 邊框被合併成一個邊框 */
+    border-collapse: collapse;
+    position: relative;
+}
+table {
+    padding: 10px;
+    margin: 50px auto;
+    line-height: 45px;
+    width: 1000px;
+    border: 3px solid #000;
+    font-family: "微軟正黑體";
+    font-size: 18px;
+    text-align: center;
+    /* position: relative; */
+}
+a {
+    text-decoration: none;
+}
+th {
+    background-color: rgb(34, 122, 211);
+}
+.e {
+    /* display: inline; */
+    /* white-space: nowrap; */
+    font-size: 15px;
+    margin: 10px;
+    width: 100px;
+}
+.n {
+    font-size: 15px;
+    margin: 10px;
+    width: 100px;
+    background: rgb(212, 211, 211);
+    border: 1px solid #000;
+}
+.submit {
+    width: 50px;
+    font-size: 15px;
+    position: absolute;
+    top: 700px;
+    right: 51%;
+    color: white;
+    background-color: rgb(34, 122, 211);
+}
+.back {
+    width: 60px;
+    font-size: 15px;
+    position: absolute;
+    top: 700px;
+    right: 46%;
+    color: white;
+    background-color: rgb(34, 122, 211);
+}
+
+.add {
+    width: 55px;
+    height: 30px;
+    font-size: 15px;
+    position: absolute;
+    top: 80px;
+    left: 250px;
+    color: white;
+    background-color: rgb(34, 122, 211);
+}
+.history {
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+    position: absolute;
+    top: 80px;
+    left: 320px;
+    color: white;
+    background-color: rgb(34, 122, 211);
+}
+.add:hover, .history:hover, .back:hover, .submit:hover {
+    background-color: rgb(114, 174, 233);
+    cursor: pointer;
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    position: absolute;
+    top: 2px;
+    right: 50px;
+}
+.goback {
+    font-size: 18pt;
+    position: absolute;
+    top: -5px;
+    left: 50px;
+}
+#back {
+    position: absolute;
+    top: -2px;
+    left: 40px;
+}
+#banner {
+    height: 50px;
+    line-height: 50px;
+    background-color: rgb(132, 198, 255);
+}
+.login {
+    font-size: 25px;
+    display: inline-block;
+    text-align: right;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -350px 0 0 -200px;
+}
+legend {
+    font-size: 40px;
+    padding: 5px 10px;
+  }
+fieldset {
+    padding: 20px;
+    border-radius: 20px;
+    border: 8px double gray;
+}
+.visitor {
+    position: absolute;
+    top: 270px;
+    left: 690px;
+}
+#count {
+    font-size: 20px;
+    position: absolute;
+    top: 80px;
+    left: 240px;
+}
