@@ -15,12 +15,11 @@ require("dbconnect.php");
   <form method="post" action="scntController.php">
 
     申請者學號： <input name="sid" type="int" id="sid" /><br>
-    審查結果: <input name = "money" type = "int" id = "sc_apply_money"
+    審查結果： <input name = "sc_apply_money" type = "int" id = "sc_apply_money" /> <br>
     秘書意見： <input name="sc_comment" type="text" id="sc_comment" /> <br>
     秘書簽章： <input name="sc_sign" type="text" id="sc_sign" /> <br>
 
     <input type="submit" name="Submit" value="送出" />
-    <!-- <button><a href="login.php">取消</a><br></button> -->
     <br>
   </form>
   </tr>
