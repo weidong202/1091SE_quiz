@@ -15,6 +15,7 @@ require("dbconnect.php");
   <form method="post" action="scntController.php">
 
     申請者學號： <input name="sid" type="int" id="sid" /><br>
+    審查結果: <input name = "money" type = "int" id = "sc_apply_money"
     秘書意見： <input name="sc_comment" type="text" id="sc_comment" /> <br>
     秘書簽章： <input name="sc_sign" type="text" id="sc_sign" /> <br>
 
@@ -24,58 +25,6 @@ require("dbconnect.php");
   </form>
   </tr>
   </table>
-  <table class="tb" border="1">
-      <tr>
-        <td>申請人（學生）</td>
-        <td></td>
-        <td>學號</td>
-        <td>107</td>
-      </tr>
-      <tr>
-        <td rowspan="3">家庭狀況</td>
-        <td>稱謂</td>
-        <td colspan="2">姓名</td>
-      </tr>
-      <tr>
-        <td>父</td>
-        <td colspan="2"><input class="e" type="text" name="fa_name"></td>
-      </tr>
-      <tr>
-        <td>母</td>
-        <td colspan="2"><input class="e" type="text" name="ma_name"></td>
-      </tr>
-      <tr>
-        <td>申請補助種類</td>
-        <td colspan="3">
-        <input type="radio" name="income_type" value="低收入戶"> 低收入戶<br>
-        <input type="radio" name="income_type" value="中低收入戶"> 中低收入戶<br>
-        <input type="radio" name="income_type" value="家庭突發因素"> 家庭突發因素<br>
-        </td>
-      </tr>
-        
-      <tr>
-      </tr>
-        <td>導師訪視說明</td>
-        <td></td>
-        <td>導師簽章</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td rowspan="2">秘書審核</td>
-        <td>審核結果</td>
-        <td colspan="3"></td>
-      </tr>
-      <tr>
-        <td>審查意見</td>
-        <td colspan="3"></td>
-      </tr>
-      <tr>
-        <td>秘書簽章</td>
-        <td></td>
-        <td>校長簽核</td>
-        <td></td>
-      </tr>
-    </table>
 </body>
 
 </html>
