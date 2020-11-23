@@ -16,8 +16,10 @@
 </head>
 
 <body>
-  <h1>導師簽注</h1>
-  <h2><a href="logout.php">&#128075;</a></h2>
+  <div id="banner">
+    <h1>導師簽注</h1>
+    <h2><a href="logout.php">&#128075;</a></h2>
+  </div>
   <form method="post" action="scntController.php">
 
     申請者學號： <input name="sid" type="int" id="sid" /><br>
@@ -30,5 +32,4 @@
   </tr>
   </table>
 </body>
-
 </html>
