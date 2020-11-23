@@ -23,9 +23,9 @@
   <table class="tb" border="1">
       <tr>
         <td>申請人（學生）</td>
-        <td></td>
+        <td><?php echo $_SESSION["loginProfile"]['name'] ?></td>
         <td>學號</td>
-        <td>107</td>
+        <td><?php echo $_SESSION["loginProfile"]['sid'] ?></td>
       </tr>
 
       <tr>

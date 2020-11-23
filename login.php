@@ -10,9 +10,6 @@
   if ($userProfile) {
     $_SESSION['loginProfile'] = $userProfile;
     if ($_SESSION['loginProfile']['account'] == 'root') {
-      // echo $_SESSION['loginProfile']['sid'];
-      // echo $_SESSION['loginProfile']['name'];
-      // echo $_SESSION['loginProfile']['password'];
       header("Location: student_mainUI.php");
     }
     if ($_SESSION['loginProfile']['account'] == 'pri') {

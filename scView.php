@@ -23,9 +23,9 @@
 
   <form method="post" action="scntController.php">
     申請者學號： <input name="sid" type="int" id="sid" /><br>
-    <!-- 審查結果： <input name = "sc_apply_money" type = "int" id = "sc_apply_money" /> <br> -->
-    審查結果： <input name = "sc_apply" type = "radio" id = "sc_apply_money" value="yes" />准予補助
-    <input name = "sc_apply" type = "radio" id = "sc_apply" value="no" />未符合補助條件<br>
+    審查結果： <input name = "sc_apply" type = "radio" value="1" />准予補助
+    <input name="sc_apply_money" type="int" id="sc_apply_money" />元
+    <input name = "sc_apply" type = "radio" id = "sc_apply" value="0" />未符合補助條件<br>
     秘書意見： <input name="sc_comment" type="text" id="sc_comment" /> <br>
     秘書簽章： <input name="sc_sign" type="text" id="sc_sign" /> <br>
 

@@ -49,13 +49,11 @@
       <!--<th>disapprove</th>-->
     </tr>
   <?php
-
-
   while ($rs = mysqli_fetch_assoc($result)) {
+
     echo "<tr>";
     echo "<td>" , $rs['sid'] , "</td>";
-    // echo "<td>" , $rs['name'], "</td>";
-    echo "<td></td>";
+    echo "<td>" , $rs['name'], "</td>";
     echo "<td>" , $rs['fa_name'], "</td>";
     echo "<td>" , $rs['ma_name'], "</td>";
     echo "<td>" , $rs['income_type'], "</td>";

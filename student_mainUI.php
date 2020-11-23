@@ -38,7 +38,7 @@
           // $sid = get_sid();
           $user = select_user();
           // $u = mysqli_fetch_assoc($user);
-          echo "<tr><td>" . $_SESSION["loginProfile"]['account'] . "</td>";
+          echo "<tr><td>" . $_SESSION["loginProfile"]['name'] . "</td>";
           echo "<td>" . $rs['income_type'] . "</td>";
           if ($rs['tea_sign'] == 0) {
             echo "<td>" . "未審核" . "</td>";

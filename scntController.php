@@ -14,5 +14,6 @@ if (isset($_POST['tea_visit_comment'])) {
   $sc_apply_money = mysqli_escape_string($db, $_POST['sc_apply_money']);
   sc_insert_comment($sc_comment, $sc_sign, $sc_apply, $sc_apply_money, $sid);
 }
-echo "Message: Completed.";
+// echo "Message: Completed.";
+header("Location:scView.php");
 ?>
