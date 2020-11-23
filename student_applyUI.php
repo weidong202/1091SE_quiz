@@ -20,15 +20,12 @@
     <h1>貧困學生補助經費申請表</h1>
   </div>
   <form action="apply.php" method="post">
-  <?php
-    // $result = select_user();
-  ?>
   <table class="tb" border="1">
       <tr>
         <td>申請人（學生）</td>
         <td></td>
         <td>學號</td>
-        <td><?php echo $_SESSION['loginProfile']['sid'] ?></td>
+        <td>107</td>
       </tr>
 
       <tr>

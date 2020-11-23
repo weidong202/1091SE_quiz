@@ -1,10 +1,10 @@
 <?php
-//   session_start();
+  session_start();
   require('studentModel.php');
 
-//   if (!isSet($_SESSION["loginProfile"])) {
-//     header("Location: loginUI.php");
-//   }
+  if (!isSet($_SESSION["loginProfile"])) {
+    header("Location: loginUI.php");
+  }
 ?>
   <?php
     $sid = (int)$_GET['sid'];

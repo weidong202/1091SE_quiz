@@ -19,8 +19,8 @@
     $result = mysqli_stmt_get_result($stmt);
 
     if ($row = mysqli_fetch_assoc($result)) {
-      //return user profile
-      $ret = array('account' => $account, 'sid' => $sid);
+      // return user profile
+      $ret = array('account' => $account, 'password' => $password);
     } else {
       $ret = NULL;
     }

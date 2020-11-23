@@ -1,9 +1,9 @@
 <?php
-//   session_start();
+  session_start();
 
-//   if (!isSet($_SESSION["loginProfile"])) {
-//     header("Location: loginUI.php");
-//   }
+  if (!isSet($_SESSION["loginProfile"])) {
+    header("Location: loginUI.php");
+  }
 
   require('studentModel.php');
 
