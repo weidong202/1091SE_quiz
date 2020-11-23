@@ -53,9 +53,13 @@
           if ($rs['pri_sign'] == 0) {
             echo "<td>" . "未審核" . "</td>";
           } else {
-            echo "<td>審核通過</td>";
+            echo "<td>審核結束</td>";
           }
-          echo "<td><a href='delete.php?sid=" . $rs['sid'] . "' onclick='return confirm(\"Are you sure?\")'>&#9940;</a></td></tr>";
+          if ($rs['pri_sign'] == 1 || 2) {
+            echo "<td></td></tr>";
+          } else {
+            echo "<td><a href='delete.php?sid=" . $rs['sid'] . "' onclick='return confirm(\"Are you sure?\")'>&#9940;</a></td></tr>";
+          }
         }
       ?>
       <input class="add" type="button" onclick="location.href='student_applyUI.php'" value="申請">

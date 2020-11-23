@@ -1,9 +1,12 @@
 <?php
-session_start();
-require("dbconnect.php");
+  session_start();
+  require("dbconnect.php");
+
+  if (!isSet($_SESSION["loginProfile"])) {
+    header("Location: loginUI.php");
+  }
 ?>
-<!-- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"> -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,7 +25,6 @@ require("dbconnect.php");
     導師簽章： <input name="tea_sign" type="text" id="tea_sign" /> <br>
 
     <input type="submit" name="Submit" value="送出" />
-    <!-- <button><a href="login.php">取消</a><br></button> -->
     <br>
   </form>
   </tr>
